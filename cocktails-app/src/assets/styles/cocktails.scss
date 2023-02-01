@@ -1,0 +1,64 @@
+@import "./_variables.scss";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.coctailsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+  padding-top: 50px;
+  top: 0px;
+  .searchContainer {
+    width: 400px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $borderColor;
+    border-radius: 8px;
+    padding: 0px 15px;
+    @media screen and (max-width: 450px) {
+      width: 350px;
+    }
+    @media screen and (max-width: 370px) {
+      width: 300px;
+    }
+    input {
+      border: none;
+      outline: none;
+      width: calc(100% - 20px);
+      font-size: 20px;
+      color: $textColor;
+    }
+    .iconContainer {
+      border-left: 1px solid $borderColor;
+      height: 100%;
+      padding-left: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .fa-solid {
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+  .oneCocktailBtn {
+    background-color: #a4f3b9;
+    color: $textColor;
+    width: 250px;
+    min-height: 45px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+}
